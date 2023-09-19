@@ -131,8 +131,25 @@ $(document).ready(function(){
     new Swiper('.image-slider', {
         //nav arrows
         navigation: {
-            nextEl: ''
-        }
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        simulateTouch: true,
+        touchRatio: 2,
+        grabCursor: true,
+
+        keyboard: {
+            enabled: true,
+            onlyViewport: true,
+            pageUpDown: true
+        },
     });
 
 
