@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     /* script for carousel */
     $('.carousel__inner').slick({
@@ -126,6 +127,14 @@ $(document).ready(function(){
     /* подключение библиотеки для анимаций. Работает в связке с animate.css */
 
     new WOW().init();
+
+    new Swiper('.image-slider', {
+        //nav arrows
+        navigation: {
+            nextEl: ''
+        }
+    });
+
 
 
 
