@@ -128,6 +128,8 @@ $(document).ready(function(){
 
     new WOW().init();
 
+    //image slider cfg
+
     new Swiper('.image-slider', {
         //nav arrows
         navigation: {
@@ -150,6 +152,13 @@ $(document).ready(function(){
             onlyViewport: true,
             pageUpDown: true
         },
+        slidesPerView: 2,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 50,
+            
+        }
     });
 
 
