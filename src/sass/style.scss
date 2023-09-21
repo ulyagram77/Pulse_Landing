@@ -10,6 +10,11 @@
 *{
     font-family: 'Museo Sans Cyrl', sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
 .container{
     max-width: 950px;
     margin: 0 auto;
