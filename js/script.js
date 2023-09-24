@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
     /* script for carousel */
     $('.carousel__inner').slick({
@@ -126,6 +127,40 @@ $(document).ready(function(){
     /* подключение библиотеки для анимаций. Работает в связке с animate.css */
 
     new WOW().init();
+
+    //image slider cfg
+
+    new Swiper('.image-slider', {
+        //nav arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+
+        simulateTouch: true,
+        touchRatio: 2,
+        grabCursor: true,
+
+        keyboard: {
+            enabled: true,
+            onlyViewport: true,
+            pageUpDown: true
+        },
+        slidesPerView: 2,
+        effect: "coverflow",
+        coverflowEffect: {
+            rotate: 20,
+            stretch: 50,
+            
+        }
+    });
+
 
 
 
